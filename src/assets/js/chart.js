@@ -205,7 +205,7 @@ chart.render();
           show: false,
         },
       },
-      colors: ['#E66239', '#198754'],
+      colors: ['#ff4da6', '#ffc0cb'],
       stroke: { width: [3, 2.5], curve: 'smooth' },
       markers: { size: 4, hover: { sizeOffset: 2 } },
       series: [
@@ -260,7 +260,7 @@ chart.render();
       if (value == null) return '-';
       // ensure numeric
       const n = Number(value);
-      return '₹' + n.toLocaleString('en-IN', { maximumFractionDigits: 0 });
+      return 'Rp' + n.toLocaleString('en-IN', { maximumFractionDigits: 0 });
     }
 
     // Example control: Randomize data (for demo)
