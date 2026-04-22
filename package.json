@@ -16,9 +16,12 @@
     "@tabler/icons": "^3.35.0",
     "@tabler/icons-webfont": "^3.35.0",
     "apexcharts": "^5.3.6",
+    "body-parser": "^2.2.2",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
-    "mysql2": "^3.22.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.2",
     "sass": "1.77.6",
     "vite": "^6.4.1"
   },
