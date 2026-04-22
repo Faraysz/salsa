@@ -48,31 +48,38 @@ if (signupForm) {
 }
 
 if (window.location.pathname.includes('signin.html')) {
-  const form = document.querySelector('form');
+  const form = document.getElementById('loginForm');
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
 
-    const res = await fetch('http://localhost:3001/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
+      try {
+        const res = await fetch('http://localhost:3001/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          alert('Login sukses 🚀');
+
+          localStorage.setItem('user', JSON.stringify(data.user));
+
+          window.location.href = 'index.html';
+        } else {
+          alert('❌ ' + data.message);
+        }
+
+      } catch (err) {
+        console.error(err);
+        alert('Server error ❌');
+      }
     });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      alert('Login sukses 🚀');
-
-      // simpan user (opsional)
-      localStorage.setItem('user', JSON.stringify(data.user));
-
-      window.location.href = 'index.html';
-    } else {
-      alert(data.message);
-    }
-  });
+  }
 }
