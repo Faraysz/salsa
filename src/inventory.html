@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Inventory - InApp Inventory Dashboard</title>
+  <title>Services - Beauty Nails Management System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
@@ -139,14 +139,13 @@
       <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span
             class="nav-text">Dashboard</span></a></li>
       <li><a class="nav-link" href="inventory.html"><i class="ti ti-box-seam"></i><span
-            class="nav-text">Inventory</span></a></li>
-      <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Add
-            Product</span></a></li>
+            class="nav-text">Services</span></a></li>
+      <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Appointments</span></a></li>
     <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a>
       </li>
-    <li><a class="nav-link" href="404-error.html"><i class="ti ti-alert-circle"></i><span class="nav-text">404 Error</span></a>
-      </li>
-      <li><a class="nav-link" href="docs.html"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li>
+    <!-- <li><a class="nav-link" href="404-error.html"><i class="ti ti-alert-circle"></i><span class="nav-text">404 Error</span></a>
+      </li> -->
+      <!-- <li><a class="nav-link" href="docs.html"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li> -->
 
       <li class="px-4 pt-4 pb-2"><small class="nav-text">Account</small></li>
       <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a>
@@ -164,11 +163,11 @@
         <div class="col-12">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <div class="">
-              <h1 class="fs-3 mb-1">Inventory</h1>
-              <p class="mb-0">Manage your product inventory</p>
+              <h1 class="fs-3 mb-1">Services</h1>
+              <p class="mb-0">Manage your nail services</p>
             </div>
             <div>
-              <a href="create-product.html" class="btn btn-primary">Add Product</a>
+              <a href="create-product.html" class="btn btn-primary">Add Service</a>
             </div>
           </div>
         </div>
@@ -177,7 +176,7 @@
         <div class="col-12">
           <div>
             <div class="d-flex gap-2 mb-3 flex-wrap justify-content-between">
-              <input type="text" class="form-control" placeholder="Search products..." style="max-width: 250px;">
+              <input type="text" class="form-control" placeholder="Search services..." style="max-width: 250px;">
               <div class="d-flex gap-2">
 
                 <button class="btn btn-outline-secondary">
@@ -200,51 +199,51 @@
 
                   <th>Code</th>
                   <th>Category</th>
-                  <th>Brand</th>
+                  <th>Service Name</th>
                   <th>Price</th>
-                  <th>Unit</th>
-                  <th>Quantity</th>
+                  <th>Duration</th>
+                  <th>Clients</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="align-middle ">
-                  <td><a href=""><img src="./assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Gaming Joy Stick</span></a>
+                  <td><a href=""><img src="./assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Gel Polish</span></a>
                   </td>
 
                   <td>PRD001</td>
-                  <td>Electronics</td>
-                  <td>Brand Name</td>
-                  <td>$99.99</td>
-                  <td>pcs</td>
-                  <td>150</td>
+                  <td>Basic</td>
+                  <td>Gel Polish</td>
+                  <td>Rp 75.000</td>
+                  <td>60 mins</td>
+                  <td>120</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
                     <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
+                  <td><a href=""><img src="./assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Manicure Basic</span></a>
                   </td>
                   <td>PRD002</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$89.99</td>
-                  <td>pcs</td>
-                  <td>320</td>
+                  <td>Manicure</td>
+                  <td>Basic</td>
+                  <td>Rp 75.000</td>
+                  <td>60 mins</td>
+                  <td>100</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
                     <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
                   </td>
                 </tr>
                 <tr class="align-middle">
-                 <td><a href=""><img src="./assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Smart Watch Pro</span></a>
+                 <td><a href=""><img src="./assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Pedicure Spa</span></a>
                   </td>
                   <td>PRD003</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$98.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>Pedicure Spa</td>
+                  <td>Rp 98.000</td>
+                  <td>60 mins</td>
                   <td>200</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
@@ -252,13 +251,13 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">USB-C Fast Charger</span></a>
+                  <td><a href=""><img src="./assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Nail Art Floral</span></a>
                   </td>
                   <td>PRD004</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$86.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>Nail Art Floral</td>
+                  <td>Rp 86.000</td>
+                  <td>60 mins</td>
                   <td>80</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
@@ -266,13 +265,13 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Portable Bluetooth Speaker</span></a>
+                  <td><a href=""><img src="./assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Nail Art Korean</span></a>
                   </td>
                   <td>PRD005</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$32.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>Nail Art Korean</td>
+                  <td>Rp 120.000</td>
+                  <td>60 mins</td>
                   <td>110</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
@@ -280,13 +279,13 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Magic Keyboard</span></a>
+                  <td><a href=""><img src="./assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Acrylic Extension</span></a>
                   </td>
                   <td>PRD006</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$49.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>Acrylic Extension</td>
+                  <td>Rp 150.000</td>
+                  <td>60 mins</td>
                   <td>10</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
@@ -294,13 +293,13 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">MacBook Pro 16"</span></a>
+                  <td><a href=""><img src="./assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">French Tip Design</span></a>
                   </td>
                   <td>PRD007</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$99.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>French Tip Design</td>
+                  <td>Rp 99.000</td>
+                  <td>60 mins</td>
                   <td>10</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>
@@ -308,13 +307,13 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
+                  <td><a href=""><img src="./assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Nail Repair Kit</span></a>
                   </td>
                   <td>PRD008</td>
-                  <td>Electronics</td>
-                  <td>Tech Pro</td>
-                  <td>$109.00</td>
-                  <td>pcs</td>
+                  <td>Basic</td>
+                  <td>Nail Repair Kit</td>
+                  <td>Rp 109.000  </td>
+                  <td>60 mins</td>
                   <td>200</td>
                   <td class="">
                     <a href="#" class=""><i class="ti ti-edit "></i></a>

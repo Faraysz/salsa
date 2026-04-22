@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
       ],
-      colors: ['#f7a085', '#E66239'],
+      colors: ['#ff4da6', '#ffc0cb'],
       chart: {
         type: 'bar',
         height: 350,
@@ -87,11 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
       yaxis: {
         labels: {
           formatter: function (e) {
-            return e + 'k';
+            return "Rp " + e + " ribuan";
           },
         },
         title: {
-          text: '$ (thousands)' ,
+          text: 'Rp (ribuan)' ,
         },
       },
       fill: {
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
      tooltip: {
     			y: {
     				formatter: function (val) {
-    					return "$ " + val + " thousands"
+    					return "Rp " + val + " ribuan"
     				}
     			}
     		},
@@ -117,7 +117,7 @@ chart.render();
         height: 200,
         type: 'radialBar',
       },
-      colors: ['#5BE49B', '#E66239'],
+      colors: ['#ff4da6', '#ffc0cb'],
       plotOptions: {
         radialBar: {
           dataLabels: {
@@ -173,7 +173,7 @@ chart.render();
         gradient: {
           shade: 'dark',
           type: 'vertical',
-          gradientToColors: ['#007867', '#FFD666', '#FFAC82'],
+          gradientToColors: ['#ff99cc', '#ffd6eb'],
           stops: [0, 100],
         },
       },

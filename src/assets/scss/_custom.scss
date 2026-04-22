@@ -1,4 +1,4 @@
-
+// src\assets\scss\_custom.scss
 .overlay {
 	position: fixed;
 	inset: 0;
@@ -114,3 +114,38 @@
 @import "./button";
 @import "./icon-shape";
 @import "./utilities";
+
+/* 🌸 PINK */
+.bg-pink {
+  background-color: #ff4da6 !important;
+}
+
+.text-pink {
+  color: #ff4da6 !important;
+}
+
+.border-pink {
+  border-color: #ff4da6 !important;
+}
+
+/* 🌸 PINK SOFT (biar aesthetic) */
+.bg-pink-soft {
+  background-color: rgba(255, 77, 166, 0.1) !important;
+}
+
+.border-pink-soft {
+  border-color: rgba(255, 77, 166, 0.3) !important;
+}
+
+/* 🔴 MERAH */
+.bg-red {
+  background-color: #ff4d4f !important;
+}
+
+.text-red {
+  color: #ff4d4f !important;
+}
+
+.border-red {
+  border-color: #ff4d4f !important;
+}
